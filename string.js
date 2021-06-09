@@ -110,8 +110,13 @@ let myString =
 
 let mynewString = `${myString}`;
 
-mynewString = mynewString.replace(`*`, `${theorem}`);
-mynewString = mynewString.replace(`*`, `${a}`);
-mynewString = mynewString.replace(`*`, `${b}`);
-mynewString = mynewString.replace(`*`, `${hypotenuse}`);
+// mynewString = mynewString.replace(`*`, `${theorem}`);
+// mynewString = mynewString.replace(`*`, `${a}`);
+// mynewString = mynewString.replace(`*`, `${b}`);
+// mynewString = mynewString.replace(`*`, `${hypotenuse}`);
+mynewString = mynewString
+  .replace(`*`, `${theorem}`)
+  .replace(`*`, `${a}`)
+  .replace(`*`, `${b}`)
+  .replace(`*`, `${Math.hypot(a, b).toFixed(2)}`);
 insertParaItem(mynewString);
