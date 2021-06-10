@@ -2,4 +2,5 @@
 
 1. string
 2. array
-3.
+3. primitive & non-primitive values
+   ![Alt Image text](/public/primitive-values.png?raw=true 'primitive values')
